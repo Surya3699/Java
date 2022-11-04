@@ -1,9 +1,9 @@
 Introduction to Java:
 -> Developed by James Gosling of Sun Microsystems.
--> JVM + JAVAC + JRE(Java Runtime Environment) + Java Docs + Java debuggers etc. = JDK
+-> JVM + JAVAC + JRE(Java Runtime Environment) + Java Docs + Java debuggers etc. = JDK.
 -> JVM has three execution phases => write(Developer) + compile(JAVAC) + run(JVM)
 -> Every OS has a different JVM but the output they produce after compiling the bytecode is the same for all. Hence, it is platform-independent.
--> Source code to Bytecode -> saved as .class file by the compiler
+-> Source code to Bytecode -> saved as .class file by the compiler.
 -> To view bytecode, a disassembler like javap can be used.
 -> Programmers can't delete objects. They can only be deleted by garbage collector.
 -> By default, JDK provides many libraries. If you want to include external libraries they should be added to the classpath.
@@ -17,15 +17,32 @@ Introduction to Java:
 -> static keyword tells us that this method is accessible without instantiating the class.
 -> void keyword tells that this method will not return anything. The main() method is the entry point of our application.
 -> Java has a Just-in-Time Compiler which only compiles the methods which are referenced.
--> JAVA_HOME for MAC = /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home
+-> JAVA_HOME for MAC = /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home.
 -> Class: It is blueprint of an objects. It is the template that describes the data and behaviour associated with it's instance.
 -> Object: It is an instance of a class. It is an entity that has a behaviour and state.
 -> Method: The behaviour of an object is the method.
 -> Instance Variables: Every object has it's own set of instance variables. The state of an object is generally created by the values assigned to these instance variables.
 -> javac is used to compile and create a .class file. java is used to execute the class.
--> The name of a source file should exactly match the public class name with the extension of .java
--> Java is case sensitive
--> First letter of a class should be in uppercase
+-> The name of a source file should exactly match the public class name with the extension of .java.
+-> Java is case sensitive.
+-> First letter of a class should be in uppercase.
+-> If several words are used to form class name, then each inner word's first letter should be uppercase.
+-> The method main() is the main entry point into a Java program; this is where the processing starts.
+-> All method names should start with a lowercase(camel-casing to be followed).
+-> Identifiers: Name of local variables, instance and class variables, and labels.
+-> All identifiers must begin with a letter/currency symbol/_.
+-> A keyword cannot be used as an identifier.
+-> Access modifiers: They control the scope of class and methods. Ex: default, public, private, protected.
+-> Non-access modifiers: Ex: final, abstract, strictfp.
+-> String[] args -> array of elements of type string. args is the name of the array(can be anything this is default).
+-> System.out.println() -> System is a predefined class that provides access to the system. println() is a built-in method. out is a variable of type output stream connected to the console.
+-> Java Development Kit (JDK) is a software development environment used for developing Java applications and applets. It includes the Java Runtime Environment (JRE), an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), and other tools needed in Java development.
+-> The Java Runtime Environment provides the minimum requirements for executing a Java application; it consists of the Java Virtual Machine (JVM), core classes, and supporting files.
+-> JVM is composed of the following:
+* A specification where the working of Java Virtual Machine is specified. But implementation provider is independent to choose the algorithm. Its implementation has been provided by Sun and other companies.
+* An implementation is a computer program that meets the requirements of the JVM specification.
+* Runtime Instance Whenever you write a java command on the command prompt to run the java class, an instance of JVM is created.
+
 
 Advantages of Java:
 1. Platform-independent(JAVAC converts the code into bytecode. JVM then executes the bytecode and returns the result. This result is the same even if the JVM packaged for different machines is different. JDK = JAVAC + JVM).
@@ -33,7 +50,7 @@ Advantages of Java:
 3. Non-primitives are always references in Java. So, we cannot pass large objects directly to functions, we can only pass their reference in Java.
 4. Since there are no pointers, bad memory access is also not possible in Java.
 5. C++<Java<Python
-6. Speed of execution -> C++>Java>Python
+6. Speed of execution -> C++>Java>Python.
 7. Java does static type checking just like C++ but, Python doesn't.
 8. Java has removed many confusing features like explicit pointers, operator overloading, etc.
 9. Java takes care of memory management through automatic garbage collector. This collects unused objects automatically.
@@ -60,3 +77,9 @@ Java Learning Path:
 15. Multithreading in Java
 16. File Handling in Java
 17. Packages in Java
+
+Access-Modifiers Scope:
+-> private: within class only.
+-> default: within class, within package.
+-> protected: within class, within package, outside package by subclass only.
+-> public: within class, within package, outside package by subclass only, outside package.
