@@ -1,0 +1,62 @@
+Introduction to Java:
+-> Developed by James Gosling of Sun Microsystems.
+-> JVM + JAVAC + JRE(Java Runtime Environment) + Java Docs + Java debuggers etc. = JDK
+-> JVM has three execution phases => write(Developer) + compile(JAVAC) + run(JVM)
+-> Every OS has a different JVM but the output they produce after compiling the bytecode is the same for all. Hence, it is platform-independent.
+-> Source code to Bytecode -> saved as .class file by the compiler
+-> To view bytecode, a disassembler like javap can be used.
+-> Programmers can't delete objects. They can only be deleted by garbage collector.
+-> By default, JDK provides many libraries. If you want to include external libraries they should be added to the classpath.
+-> Object is an instance of a class.
+-> Four concepts of OOPs are:
+1. Abstraction
+2. Encapsulation
+3. Inheritance
+4. Polymorphism
+-> java.io package provides a set of input and output streams for reading and writing data to files or other input/output sources.
+-> static keyword tells us that this method is accessible without instantiating the class.
+-> void keyword tells that this method will not return anything. The main() method is the entry point of our application.
+-> Java has a Just-in-Time Compiler which only compiles the methods which are referenced.
+-> JAVA_HOME for MAC = /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home
+-> Class: It is blueprint of an objects. It is the template that describes the data and behaviour associated with it's instance.
+-> Object: It is an instance of a class. It is an entity that has a behaviour and state.
+-> Method: The behaviour of an object is the method.
+-> Instance Variables: Every object has it's own set of instance variables. The state of an object is generally created by the values assigned to these instance variables.
+-> javac is used to compile and create a .class file. java is used to execute the class.
+-> The name of a source file should exactly match the public class name with the extension of .java
+-> Java is case sensitive
+-> First letter of a class should be in uppercase
+
+Advantages of Java:
+1. Platform-independent(JAVAC converts the code into bytecode. JVM then executes the bytecode and returns the result. This result is the same even if the JVM packaged for different machines is different. JDK = JAVAC + JVM).
+2. Object Oriented Programming Language(Uses classes and objects. It is not pure object oriented as it still supports primitive datatypes like char, int, etc.).
+3. Non-primitives are always references in Java. So, we cannot pass large objects directly to functions, we can only pass their reference in Java.
+4. Since there are no pointers, bad memory access is also not possible in Java.
+5. C++<Java<Python
+6. Speed of execution -> C++>Java>Python
+7. Java does static type checking just like C++ but, Python doesn't.
+8. Java has removed many confusing features like explicit pointers, operator overloading, etc.
+9. Java takes care of memory management through automatic garbage collector. This collects unused objects automatically.
+10. Bytecode is an intermediate level language(reusability of code).
+11. JVM is the interpreter.
+12. Java is a multi-threaded language. It can perform many tasks at once by defining multiple threads.
+13. Java does not require any preprocessor. It does not require creation of header files for creating a Java application.
+
+Java Learning Path:
+1. About Java
+2. Java Environment
+3. Java Programming Basics
+4. Object Oriented Programming Concepts in Java
+5. Classes and Objects in Java
+6. Constructors in Java
+7. Methods in Java
+8. Strings in Java
+9. Arrays in Java
+10. Collections in Java
+11. Generics in Java
+12. Stream in Java
+13. Exceptions and Exception Handling in Java
+14. Regular Expressions in Java
+15. Multithreading in Java
+16. File Handling in Java
+17. Packages in Java
